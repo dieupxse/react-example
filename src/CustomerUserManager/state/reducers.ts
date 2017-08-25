@@ -12,7 +12,7 @@ const initState: State = {
     users: []
 }
 
-export const reducer = (state = initState, action: Action) => {
+export const UserReducer = (state = initState, action: Action) => {
     let newState: State = {}
     switch (action.type) {
         case FECTH_USERS_SUCCESS:

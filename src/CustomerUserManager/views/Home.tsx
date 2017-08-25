@@ -2,7 +2,7 @@ import * as React from 'react'
 import {connect} from 'react-redux'
 import { DefaultLayout } from '../Layouts'
 import { createFetchUsersAction } from '../state'
-
+import { NavLink } from 'react-router-dom'
 
 
 const mapStateToProps = (state) => {
@@ -40,7 +40,9 @@ export class Home extends React.Component<any> {
                                     return (
                                         <tr key={user.id}>
                                             <td>{user.id}</td>
-                                            <td>{user.username}</td>
+                                            <td>
+                                                <NavLink className="" id="" activeClassName="active" to={`/detail/${user.id}`}>{user.username}</NavLink>
+                                                </td>
                                             <td>{user.password}</td>
                                             <td>{user.description}</td>
                                             <td>{user.isActive}</td>
