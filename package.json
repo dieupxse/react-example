@@ -1,0 +1,52 @@
+{
+    "config": {
+        "host": "localhost",
+        "port": 3000
+    },
+    "dependencies": {
+        "history": "^4.7.2",
+        "jquery": "^3.2.1",
+        "react": "^15.6.1",
+        "react-dom": "^15.6.1",
+        "react-redux": "^5.0.6",
+        "react-router": "^4.2.0",
+        "react-router-redux": "next",
+        "redux": "^3.7.2"
+    },
+    "devDependencies": {
+        "@types/jquery": "^3.2.12",
+        "@types/react": "^16.0.5",
+        "@types/react-dom": "^15.5.1",
+        "@types/react-redux": "^5.0.5",
+        "@types/react-router": "^4.0.15",
+        "@types/react-router-redux": "^5.0.7",
+        "@types/webpack-env": "^1.13.0",
+        "cross-env": "^5.0.1",
+        "css-loader": "^0.28.4",
+        "eslint": "^4.3.0",
+        "file-loader": "^0.11.2",
+        "html-webpack-plugin": "^2.29.0",
+        "husky": "^0.14.3",
+        "node-sass": "^4.5.3",
+        "react-hot-loader": "next",
+        "rimraf": "^2.6.1",
+        "sass-loader": "^6.0.6",
+        "style-loader": "^0.18.2",
+        "ts-loader": "^2.3.2",
+        "tslint": "^5.5.0",
+        "tslint-eslint-rules": "^4.1.1",
+        "typescript": "^2.4.2",
+        "webpack": "^3.4.1",
+        "webpack-dev-server": "^2.6.1",
+        "webpack-env": "^0.8.0"
+    },
+    "name": "clear-react",
+    "scripts": {
+        "build": "npm run clean && npm run build:webpack",
+        "build:webpack": "cross-env NODE_ENV=production webpack --colors --config webpack.config.prod.js",
+        "clean": "rimraf dist",
+        "start": "node devServer.js",
+        "lint": "tslint --project tsconfig.json"
+    },
+    "version": "1.0.0"
+}

@@ -1,0 +1,27 @@
+.sidebar {
+    .nav {
+        $active-color: #10a9f5;
+        font-size: 1.1rem;
+        display: block;
+        &-item {
+            display: block;
+            margin-bottom: .5rem;
+        }
+        &-icon {
+            display: inline-block;
+            color: #e3e4e6;
+            margin-right: 1rem;
+        }
+        &-label {
+            display: inline-block;
+        }
+        &-link {
+            color: #545d70;
+            &.active {
+                >span {
+                    color: $active-color;
+                }
+            }
+        }
+    }
+}

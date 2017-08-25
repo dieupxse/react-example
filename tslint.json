@@ -1,0 +1,32 @@
+{
+    "defaultSeverity": "error",
+
+    "extends": [
+        "tslint-eslint-rules"
+    ],
+    "linterOptions": {
+        "typeCheck": true
+    },
+    "jsRules": {},
+    "rules": {
+        "arrow-parens": true,
+        "no-constant-condition": true,
+        "no-extra-semi": true,
+        "prefer-const": 2,
+        "prefer-template": 2,
+        "quotes": [
+            2,
+            "single"
+        ],
+        "semicolon": [
+            true,
+            "never"
+        ],
+        "strict": [
+            2,
+            "never"
+        ],
+        "no-unused-variable": true
+    },
+    "rulesDirectory": []
+}
